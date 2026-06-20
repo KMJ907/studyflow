@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<rss version="2.0">
+
+<channel>
+
+    <title>StudyFlow</title>
+
+    <link>https://studyflow.kro.kr</link>
+
+    <description>
+        StudyFlow는 스터디 플래너, 오답노트 등 학습 자료를 제공하는 플랫폼입니다.
+    </description>
+
+    <language>ko-kr</language>
+
+    <lastBuildDate>Sat, 21 Jun 2026 00:00:00 +0900</lastBuildDate>
+
+    <!-- =========================
+         공지사항
+    ========================== -->
+
+    <item>
+        <title>StudyFlow 오픈 안내</title>
+
+        <link>
+            https://studyflow.kro.kr/notice-view.html?id=1
+        </link>
+
+        <description>
+            StudyFlow가 정식으로 오픈되었습니다.
+        </description>
+
+        <pubDate>Sat, 21 Jun 2026 10:00:00 +0900</pubDate>
+
+        <guid>
+            https://studyflow.kro.kr/notice-view.html?id=1
+        </guid>
+    </item>
+
+    <item>
+        <title>자료 업로드 안내</title>
+
+        <link>
+            https://studyflow.kro.kr/notice-view.html?id=2
+        </link>
+
+        <description>
+            새로운 학습 자료가 추가되었습니다.
+        </description>
+
+        <pubDate>Sun, 22 Jun 2026 10:00:00 +0900</pubDate>
+
+        <guid>
+            https://studyflow.kro.kr/notice-view.html?id=2
+        </guid>
+    </item>
+
+    <!-- =========================
+         인기/추천 상품 (예시)
+    ========================== -->
+
+    <item>
+        <title>주간 스터디 플래너</title>
+
+        <link>
+            https://studyflow.kro.kr/product-view.html?id=1
+        </link>
+
+        <description>
+            효율적인 시간 관리를 위한 스터디 플래너입니다.
+        </description>
+
+        <pubDate>Sat, 21 Jun 2026 09:00:00 +0900</pubDate>
+
+        <guid>
+            https://studyflow.kro.kr/product-view.html?id=1
+        </guid>
+    </item>
+
+</channel>
+
+</rss>
