@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자료 상세 | StudyFlow</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+
+    <div class="container navbar">
+
+        <a href="index.html" class="logo">
+            StudyFlow
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">홈</a></li>
+                <li><a href="notice.html">공지사항</a></li>
+                <li><a href="products.html">자료</a></li>
+                <li><a href="request.html">자료 요청</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+</header>
+
+<section class="section">
+
+    <div class="container">
+
+        <article class="content-page">
+
+            <h1 id="title">
+                자료 제목
+            </h1>
+
+            <div class="meta">
+
+                등록일 :
+                <span id="date"></span>
+
+                |
+
+                카테고리 :
+                <span id="category"></span>
+
+            <div class="stats">
+
+    <div class="stat-card">
+
+        <strong id="rating">
+            -
+        </strong>
+
+        <span>
+            평점
+        </span>
+
+        <div>
+            (<span id="ratingCount">0</span>명)
+        </div>
+
+    </div>
+
+    <div class="stat-card">
+
+        <strong id="downloads">
+            0
+        </strong>
+
+        <span>
+            신청 수
+        </span>
+
+    </div>
+
+</div>
+
+            <img
+                id="thumbnail"
+                class="preview-image"
+                src=""
+                alt="미리보기">
+
+            <div id="tags"
+                 class="tags">
+
+            </div>
+
+            <div id="content">
+
+            </div>
+
+            <div class="download-box">
+
+                <h3>
+                    자료 신청
+                </h3>
+
+                <p>
+                    아래 버튼을 눌러 신청하세요.
+                </p>
+
+                <a
+                    id="applyBtn"
+                    target="_blank"
+                    class="btn-primary">
+
+                    신청하기
+
+                </a>
+
+            </div>
+
+            <div style="margin-top:40px;">
+
+                <a href="products.html"
+                   class="btn-secondary">
+
+                    목록으로
+
+                </a>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <div class="container">
+
+        <p>
+            © 2026 StudyFlow. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+<script src="js/product-view.js"></script>
+
+</body>
+</html>

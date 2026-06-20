@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyFlow - 공부 자료 공유 플랫폼</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="container navbar">
+
+        <a href="index.html" class="logo">
+            StudyFlow
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">홈</a></li>
+                <li><a href="notice.html">공지사항</a></li>
+                <li><a href="products.html">자료</a></li>
+                <li><a href="request.html">자료 요청</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+<section class="hero">
+
+    <section class="section">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            📌 StudyFlow 소개
+        </h2>
+
+        <div class="intro-grid">
+
+            <div class="intro-card">
+                <h3>📚 자료 공유 플랫폼</h3>
+                <p>
+                    스터디 플래너, 오답노트, 시간관리 자료를
+                    한 곳에서 제공하는 학습 자료 플랫폼입니다.
+                </p>
+            </div>
+
+            <div class="intro-card">
+                <h3>📄 간편한 신청 시스템</h3>
+                <p>
+                    네이버 폼 / 구글 폼을 통해
+                    원하는 자료를 쉽게 신청할 수 있습니다.
+                </p>
+            </div>
+
+            <div class="intro-card">
+                <h3>🔥 인기 자료 추천</h3>
+                <p>
+                    조회수 기반 인기 자료와
+                    평점 기반 추천 자료를 자동으로 제공합니다.
+                </p>
+            </div>
+
+            <div class="intro-card">
+                <h3>⭐ 맞춤형 자료 제공</h3>
+                <p>
+                    필요한 공부 자료를 빠르게 찾고
+                    효율적으로 활용할 수 있도록 구성되어 있습니다.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <div class="container">
+
+        <span class="badge">
+            Study Resource Platform
+        </span>
+
+        <h1>
+            공부에 필요한 자료를<br>
+            쉽고 빠르게 받아보세요
+        </h1>
+
+        <p>
+            스터디 플래너, 오답노트, 시간표 등
+            다양한 학습 자료를 제공합니다.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="products.html"
+               class="btn-primary">
+
+                자료 둘러보기
+
+            </a>
+
+            <a href="notice.html"
+               class="btn-secondary">
+
+                공지사항
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            📌 오늘의 추천 자료
+        </h2>
+
+        <div id="featuredProduct"></div>
+
+    </div>
+
+</section>
+
+<section class="section">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            🔥 인기 자료
+        </h2>
+
+        <div class="board-header">
+            <div>자료명</div>
+            <div>등록일</div>
+        </div>
+
+        <div id="popularProducts"></div>
+
+    </div>
+
+</section>
+
+<section class="section">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            📢 최신 공지사항
+        </h2>
+
+        <div class="board-header">
+            <div>제목</div>
+            <div>작성일</div>
+        </div>
+
+        <div id="latestNotices"></div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <div class="container">
+
+        <p>
+            © 2026 StudyFlow. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
