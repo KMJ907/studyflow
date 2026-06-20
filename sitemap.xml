@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- 홈페이지 -->
+    <url>
+        <loc>https://studyflow.kro.kr/index.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- 공지사항 -->
+    <url>
+        <loc>https://studyflow.kro.kr/notice.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- 상품 목록 -->
+    <url>
+        <loc>https://studyflow.kro.kr/products.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- 공지 상세 -->
+    <url>
+        <loc>https://studyflow.kro.kr/notice-view.html</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- 상품 상세 -->
+    <url>
+        <loc>https://studyflow.kro.kr/product-view.html</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- 신청 페이지 (네이버/구글 폼 연결 페이지라면 유지) -->
+    <url>
+        <loc>https://studyflow.kro.kr/request.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+</urlset>
