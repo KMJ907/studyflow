@@ -1,0 +1,1671 @@
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+
+    --primary:#2563eb;
+    --primary-dark:#1d4ed8;
+
+    --secondary:#f8fafc;
+
+    --text:#0f172a;
+    --text-light:#64748b;
+
+    --border:#e2e8f0;
+
+    --shadow:
+        0 10px 30px rgba(0,0,0,.08);
+
+    --radius:18px;
+
+    --container:1200px;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:
+        "Pretendard",
+        "Noto Sans KR",
+        sans-serif;
+
+    background:#f8fafc;
+
+    color:var(--text);
+
+    line-height:1.7;
+}
+
+
+/* =========================
+   공통
+========================= */
+
+.container{
+
+    width:100%;
+    max-width:var(--container);
+
+    margin:0 auto;
+
+    padding:0 20px;
+}
+
+.section{
+    padding:80px 0;
+}
+
+.section-title{
+
+    font-size:2rem;
+
+    font-weight:800;
+
+    margin-bottom:30px;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    backdrop-filter:blur(20px);
+
+    background:
+        rgba(255,255,255,.85);
+
+    border-bottom:
+        1px solid rgba(226,232,240,.7);
+}
+
+.navbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    height:80px;
+}
+
+.logo{
+
+    font-size:1.8rem;
+
+    font-weight:900;
+
+    color:var(--primary);
+
+    letter-spacing:-1px;
+}
+
+nav ul{
+
+    display:flex;
+
+    gap:12px;
+
+    list-style:none;
+}
+
+nav a{
+
+    padding:10px 18px;
+
+    border-radius:12px;
+
+    transition:.25s;
+}
+
+nav a:hover{
+
+    background:#eff6ff;
+
+    color:var(--primary);
+}
+
+nav a.active{
+
+    background:var(--primary);
+
+    color:white;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+
+    padding:120px 0;
+
+    text-align:center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eff6ff,
+            #ffffff
+        );
+}
+
+.badge{
+
+    display:inline-block;
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    background:#dbeafe;
+
+    color:var(--primary);
+
+    font-weight:700;
+
+    margin-bottom:25px;
+}
+
+.hero h1{
+
+    font-size:4rem;
+
+    font-weight:900;
+
+    line-height:1.2;
+
+    margin-bottom:20px;
+}
+
+.hero p{
+
+    max-width:700px;
+
+    margin:0 auto;
+
+    color:var(--text-light);
+
+    font-size:1.15rem;
+
+    margin-bottom:40px;
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn-primary{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:15px 28px;
+
+    border-radius:14px;
+
+    background:var(--primary);
+
+    color:white;
+
+    font-weight:700;
+
+    transition:.25s;
+}
+
+.btn-primary:hover{
+
+    background:var(--primary-dark);
+
+    transform:translateY(-2px);
+}
+
+.btn-secondary{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:15px 28px;
+
+    border-radius:14px;
+
+    border:1px solid var(--border);
+
+    background:white;
+
+    font-weight:700;
+
+    transition:.25s;
+}
+
+.btn-secondary:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:var(--shadow);
+}
+
+
+/* =========================
+   PAGE HEADER
+========================= */
+
+.page-header{
+
+    padding:90px 0 60px;
+
+    text-align:center;
+}
+
+.page-header h1{
+
+    font-size:3rem;
+
+    font-weight:900;
+
+    margin-bottom:15px;
+}
+
+.page-header p{
+
+    color:var(--text-light);
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.card{
+
+    background:white;
+
+    border-radius:var(--radius);
+
+    padding:25px;
+
+    box-shadow:var(--shadow);
+}
+
+
+/* =========================
+   BOARD
+========================= */
+
+.board-header{
+
+    display:grid;
+
+    grid-template-columns:
+        1fr 140px;
+
+    background:#eef2ff;
+
+    border:1px solid #dbeafe;
+
+    border-radius:16px;
+
+    padding:18px 24px;
+
+    font-weight:800;
+
+    color:#1e3a8a;
+
+    margin-bottom:12px;
+}
+
+.board-header div:last-child{
+    text-align:center;
+}
+
+
+.board-row{
+
+    display:grid;
+
+    grid-template-columns:
+        1fr 140px;
+
+    align-items:center;
+
+    background:white;
+
+    padding:18px 24px;
+
+    margin-bottom:10px;
+
+    border-radius:16px;
+
+    border:1px solid var(--border);
+
+    transition:.25s;
+}
+
+.board-row:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 15px 35px rgba(37,99,235,.08);
+
+    border-color:#bfdbfe;
+}
+
+.board-row span:first-child{
+
+    font-weight:600;
+
+    overflow:hidden;
+
+    text-overflow:ellipsis;
+
+    white-space:nowrap;
+}
+
+.board-row span:last-child{
+
+    text-align:center;
+
+    color:var(--text-light);
+
+    font-size:.95rem;
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+.search-box{
+
+    margin-bottom:25px;
+}
+
+.search-box input{
+
+    width:100%;
+
+    padding:16px 20px;
+
+    border:1px solid var(--border);
+
+    border-radius:16px;
+
+    background:white;
+
+    font-size:1rem;
+
+    transition:.25s;
+}
+
+.search-box input:focus{
+
+    outline:none;
+
+    border-color:var(--primary);
+
+    box-shadow:
+        0 0 0 4px
+        rgba(37,99,235,.1);
+}
+
+
+/* =========================
+   CATEGORY
+========================= */
+
+.category-filter{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-bottom:25px;
+}
+
+.category-btn{
+
+    border:none;
+
+    cursor:pointer;
+
+    padding:12px 18px;
+
+    border-radius:999px;
+
+    background:white;
+
+    border:1px solid var(--border);
+
+    font-weight:600;
+
+    transition:.25s;
+}
+
+.category-btn:hover{
+
+    border-color:#93c5fd;
+
+    color:var(--primary);
+}
+
+.category-btn.active{
+
+    background:var(--primary);
+
+    color:white;
+
+    border-color:var(--primary);
+}
+
+
+/* =========================
+   SORT
+========================= */
+
+.sort-box{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    margin-bottom:25px;
+}
+
+.sort-box select{
+
+    padding:12px 16px;
+
+    border-radius:14px;
+
+    border:1px solid var(--border);
+
+    background:white;
+
+    cursor:pointer;
+
+    font-size:.95rem;
+}
+
+.sort-box select:focus{
+
+    outline:none;
+
+    border-color:var(--primary);
+}
+
+
+/* =========================
+   FEATURED PRODUCT
+========================= */
+
+#featuredProduct{
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #3b82f6
+        );
+
+    border-radius:24px;
+
+    padding:30px;
+
+    color:white;
+
+    box-shadow:
+        0 20px 40px
+        rgba(37,99,235,.25);
+}
+
+#featuredProduct .board-row{
+
+    background:transparent;
+
+    border:none;
+
+    padding:0;
+
+    color:white;
+
+    margin:0;
+
+    box-shadow:none;
+}
+
+#featuredProduct .board-row:hover{
+
+    transform:none;
+}
+
+#featuredProduct span{
+
+    color:white !important;
+
+    font-size:1.1rem;
+}
+
+
+/* =========================
+   CONTENT PAGE
+========================= */
+
+.content-page{
+
+    background:white;
+
+    border-radius:24px;
+
+    padding:40px;
+
+    box-shadow:var(--shadow);
+}
+
+.content-page h1{
+
+    font-size:2.3rem;
+
+    margin-bottom:15px;
+
+    line-height:1.3;
+}
+
+.meta{
+
+    color:var(--text-light);
+
+    margin-bottom:25px;
+
+    padding-bottom:20px;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+#content{
+
+    margin-top:30px;
+
+    line-height:1.9;
+}
+
+#content p{
+
+    margin-bottom:18px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+
+    margin-top:80px;
+
+    background:white;
+
+    border-top:
+        1px solid var(--border);
+
+    padding:40px 0;
+
+    text-align:center;
+
+    color:var(--text-light);
+}
+
+
+/* =========================
+   PRODUCT STATS (수정본)
+========================= */
+
+.stats{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(160px, 1fr));
+
+    gap:15px;
+
+    margin:30px 0;
+}
+
+.stat-card{
+
+    background:white;
+
+    border:1px solid var(--border);
+
+    border-radius:18px;
+
+    padding:22px;
+
+    text-align:center;
+
+    transition:.25s;
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+        0 12px 25px rgba(0,0,0,.08);
+}
+
+.stat-card strong{
+
+    display:block;
+
+    font-size:1.6rem;
+
+    font-weight:800;
+
+    color:var(--primary);
+
+    margin-bottom:6px;
+}
+
+.stat-card span{
+
+    color:var(--text-light);
+
+    font-size:.9rem;
+}
+
+/* =========================
+   PREVIEW IMAGE
+========================= */
+
+.preview-image{
+
+    width:100%;
+
+    border-radius:20px;
+
+    margin:30px 0;
+
+    border:1px solid var(--border);
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.06);
+
+    transition:.3s;
+}
+
+.preview-image:hover{
+
+    transform:scale(1.01);
+}
+
+
+/* =========================
+   TAGS
+========================= */
+
+.tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin:25px 0;
+}
+
+.tag{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    padding:8px 14px;
+
+    border-radius:999px;
+
+    background:#eff6ff;
+
+    color:var(--primary);
+
+    font-size:.9rem;
+
+    font-weight:700;
+
+    border:1px solid #bfdbfe;
+}
+
+.tag:hover{
+
+    background:#dbeafe;
+}
+
+
+/* =========================
+   DOWNLOAD BOX
+========================= */
+
+.download-box{
+
+    margin-top:40px;
+
+    padding:30px;
+
+    border-radius:24px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eff6ff,
+            #ffffff
+        );
+
+    border:1px solid #dbeafe;
+}
+
+.download-box h3{
+
+    font-size:1.4rem;
+
+    margin-bottom:10px;
+}
+
+.download-box p{
+
+    color:var(--text-light);
+
+    margin-bottom:20px;
+}
+
+
+/* =========================
+   REQUEST PAGE
+========================= */
+
+.request-card{
+
+    background:white;
+
+    border-radius:24px;
+
+    padding:40px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+}
+
+.request-card h2{
+
+    font-size:2rem;
+
+    margin-bottom:15px;
+}
+
+.request-card p{
+
+    color:var(--text-light);
+
+    margin-bottom:25px;
+}
+
+
+/* =========================
+   NOTICE CONTENT
+========================= */
+
+.notice-content{
+
+    line-height:2;
+
+    font-size:1.05rem;
+}
+
+.notice-content img{
+
+    max-width:100%;
+
+    border-radius:16px;
+
+    margin:20px 0;
+}
+
+
+/* =========================
+   EMPTY STATE
+========================= */
+
+.empty-state{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:60px 20px;
+
+    text-align:center;
+
+    border:1px dashed var(--border);
+
+    color:var(--text-light);
+}
+
+.empty-state h3{
+
+    margin-bottom:10px;
+
+    color:var(--text);
+}
+
+
+/* =========================
+   FADE ANIMATION
+========================= */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:
+            translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+            translateY(0);
+
+    }
+}
+
+.hero,
+.board-row,
+.card,
+.content-page,
+.download-box{
+
+    animation:
+        fadeUp .5s ease;
+}
+
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+::-webkit-scrollbar{
+
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+
+    background:#f1f5f9;
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#cbd5e1;
+
+    border-radius:999px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#94a3b8;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width:900px){
+
+    .hero h1{
+
+        font-size:2.8rem;
+    }
+
+    .stats{
+
+        grid-template-columns:1fr;
+    }
+
+    .content-page{
+
+        padding:25px;
+    }
+
+    .page-header h1{
+
+        font-size:2.3rem;
+    }
+}
+
+@media (max-width:768px){
+
+    .navbar{
+
+        flex-direction:column;
+
+        height:auto;
+
+        padding:20px 0;
+    }
+
+    nav ul{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+    }
+
+    .hero{
+
+        padding:90px 0;
+    }
+
+    .hero h1{
+
+        font-size:2.2rem;
+    }
+
+    .hero p{
+
+        font-size:1rem;
+    }
+
+    .board-header,
+    .board-row{
+
+        grid-template-columns:
+            1fr 90px;
+    }
+
+    .section{
+
+        padding:60px 0;
+    }
+}
+
+@media (max-width:500px){
+
+    .board-header{
+
+        display:none;
+    }
+
+    .board-row{
+
+        grid-template-columns:1fr;
+
+        gap:10px;
+    }
+
+    .board-row span:last-child{
+
+        text-align:left;
+    }
+
+    .hero h1{
+
+        font-size:1.8rem;
+    }
+
+    .logo{
+
+        font-size:1.5rem;
+    }
+
+    .btn-primary,
+    .btn-secondary{
+
+        width:100%;
+    }
+
+    .hero-buttons{
+
+        flex-direction:column;
+    }
+}
+
+
+/* =========================
+   NOTICE PIN
+========================= */
+
+.notice-pin{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    background:#fef3c7;
+
+    color:#92400e;
+
+    padding:6px 12px;
+
+    border-radius:999px;
+
+    font-size:.85rem;
+
+    font-weight:700;
+
+    margin-right:10px;
+}
+
+
+/* =========================
+   STATS HOVER
+========================= */
+
+.stat-card{
+
+    transition:.25s;
+}
+
+.stat-card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+        0 12px 25px
+        rgba(0,0,0,.08);
+
+    border-color:#bfdbfe;
+}
+
+
+/* =========================
+   FEATURE BADGE
+========================= */
+
+.feature-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    padding:8px 14px;
+
+    border-radius:999px;
+
+    background:#fef9c3;
+
+    color:#854d0e;
+
+    font-size:.85rem;
+
+    font-weight:700;
+}
+
+
+/* =========================
+   PRODUCT THUMBNAIL CARD
+========================= */
+
+.product-thumbnail{
+
+    width:100%;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    margin-bottom:20px;
+
+    border:1px solid var(--border);
+}
+
+.product-thumbnail img{
+
+    width:100%;
+
+    transition:.4s;
+}
+
+.product-thumbnail:hover img{
+
+    transform:scale(1.05);
+}
+
+
+/* =========================
+   RELATED PRODUCTS
+========================= */
+
+.related-products{
+
+    margin-top:60px;
+}
+
+.related-products h3{
+
+    margin-bottom:20px;
+
+    font-size:1.5rem;
+}
+
+.related-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(auto-fit,minmax(250px,1fr));
+
+    gap:20px;
+}
+
+.related-card{
+
+    background:white;
+
+    border:1px solid var(--border);
+
+    border-radius:20px;
+
+    padding:20px;
+
+    transition:.25s;
+}
+
+.related-card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+        0 15px 30px rgba(0,0,0,.08);
+}
+
+.related-card h4{
+
+    margin-bottom:10px;
+}
+
+.related-card p{
+
+    color:var(--text-light);
+
+    font-size:.95rem;
+}
+
+
+/* =========================
+   LOADING SKELETON
+========================= */
+
+.skeleton{
+
+    height:20px;
+
+    border-radius:10px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #f1f5f9 25%,
+            #e2e8f0 50%,
+            #f1f5f9 75%
+        );
+
+    background-size:200% 100%;
+
+    animation:
+        shimmer 1.5s infinite;
+}
+
+@keyframes shimmer{
+
+    0%{
+        background-position:
+            200% 0;
+    }
+
+    100%{
+        background-position:
+            -200% 0;
+    }
+}
+
+
+/* =========================
+   BACK TO TOP
+========================= */
+
+.back-to-top{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:52px;
+
+    height:52px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    color:white;
+
+    font-size:1.2rem;
+
+    cursor:pointer;
+
+    box-shadow:
+        0 10px 25px
+        rgba(37,99,235,.3);
+
+    transition:.25s;
+
+    z-index:999;
+}
+
+.back-to-top:hover{
+
+    transform:translateY(-4px);
+}
+
+
+/* =========================
+   GLASS CARD
+========================= */
+
+.glass-card{
+
+    background:
+        rgba(255,255,255,.75);
+
+    backdrop-filter:
+        blur(16px);
+
+    border:
+        1px solid rgba(255,255,255,.4);
+
+    border-radius:24px;
+
+    padding:30px;
+}
+
+
+/* =========================
+   HOVER UNDERLINE
+========================= */
+
+.link-hover{
+
+    position:relative;
+}
+
+.link-hover::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-3px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--primary);
+
+    transition:.25s;
+}
+
+.link-hover:hover::after{
+
+    width:100%;
+}
+
+
+/* =========================
+   PREMIUM SHADOW
+========================= */
+
+.premium-card{
+
+    background:white;
+
+    border-radius:24px;
+
+    padding:25px;
+
+    box-shadow:
+        0 25px 50px rgba(15,23,42,.08);
+
+    transition:.3s;
+}
+
+.premium-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:
+        0 35px 60px rgba(15,23,42,.12);
+}
+
+
+/* =========================
+   STATUS BADGE
+========================= */
+
+.status-new{
+
+    background:#dcfce7;
+
+    color:#166534;
+
+    padding:5px 10px;
+
+    border-radius:999px;
+
+    font-size:.8rem;
+
+    font-weight:700;
+}
+
+.status-hot{
+
+    background:#fee2e2;
+
+    color:#b91c1c;
+
+    padding:5px 10px;
+
+    border-radius:999px;
+
+    font-size:.8rem;
+
+    font-weight:700;
+}
+
+
+/* =========================
+   SELECTION COLOR
+========================= */
+
+::selection{
+
+    background:#bfdbfe;
+
+    color:#1e3a8a;
+}
+
+/* =========================
+   INTRO CARDS (홈 소개)
+========================= */
+
+.intro-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:20px;
+
+    margin-top:30px;
+}
+
+.intro-card{
+
+    background:white;
+
+    border:1px solid var(--border);
+
+    border-radius:20px;
+
+    padding:25px;
+
+    box-shadow:var(--shadow);
+
+    transition:.3s;
+
+}
+
+.intro-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:
+        0 20px 40px rgba(0,0,0,.1);
+}
+
+.intro-card h3{
+
+    font-size:1.2rem;
+
+    margin-bottom:10px;
+
+    color:var(--primary);
+}
+
+.intro-card p{
+
+    color:var(--text-light);
+
+    line-height:1.6;
+    font-size:.95rem;
+}
+
+
+@media (max-width: 480px){
+
+    /* =========================
+       HERO TITLE
+    ========================= */
+
+    .hero h1{
+        font-size:1.8rem;
+    }
+
+
+    /* =========================
+       BUTTONS
+    ========================= */
+
+    .hero-buttons{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .btn-primary,
+    .btn-secondary{
+        width:100%;
+        text-align:center;
+    }
+
+
+    /* =========================
+       SECTION TITLE
+    ========================= */
+
+    .section-title{
+        font-size:1.4rem;
+    }
+
+
+    /* =========================
+       CARD PADDING
+    ========================= */
+
+    .intro-card,
+    .card,
+    .premium-card{
+        padding:18px;
+    }
+
+
+    /* =========================
+       BOARD ROW TEXT
+    ========================= */
+
+    .board-row span:first-child{
+        font-size:1rem;
+    }
+
+
+    /* =========================
+       STATS TEXT
+    ========================= */
+
+    .stat-card strong{
+        font-size:1.3rem;
+    }
+}
+
+
+@media (max-width: 768px){
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero h1{
+        font-size:2.2rem;
+    }
+
+    .hero p{
+        font-size:1rem;
+    }
+
+    .hero{
+        padding:80px 0;
+    }
+
+
+    /* =========================
+       INTRO CARDS
+    ========================= */
+
+    .intro-grid{
+        grid-template-columns:1fr;
+    }
+
+
+    /* =========================
+       BOARD
+    ========================= */
+
+    .board-header{
+        display:none;
+    }
+
+    .board-row{
+        grid-template-columns:1fr;
+        gap:8px;
+        padding:16px;
+    }
+
+    .board-row span:last-child{
+        text-align:left;
+        font-size:.9rem;
+    }
+
+
+    /* =========================
+       STATS
+    ========================= */
+
+    .stats{
+        grid-template-columns:1fr;
+    }
+
+
+    /* =========================
+       CONTENT PAGE
+    ========================= */
+
+    .content-page{
+        padding:25px;
+    }
+
+
+    /* =========================
+       NAV
+    ========================= */
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:8px;
+    }
+
+    .navbar{
+        flex-direction:column;
+        height:auto;
+        padding:15px 0;
+    }
+}
