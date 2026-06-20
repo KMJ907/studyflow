@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# sitemap 위치
+Sitemap: https://studyflow.kro.kr/sitemap.xml
+
+# RSS 피드
+Sitemap: https://studyflow.kro.kr/rss.xml
